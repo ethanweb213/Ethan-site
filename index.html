@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Websites for small businesses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#F2F6F8;--ink:#0E2A47;--mute:#4A6178;--card:#FFFFFF;--line:#D3DEE6;--accent:#E39B25;--accent-ink:#2A1A00;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1A2C;--ink:#EAF1F7;--mute:#9DB2C4;--card:#112741;--line:#23405F}}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,system-ui,sans-serif;line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding:20px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{font-weight:800;font-size:1.1rem}
+.lang button{background:none;border:1px solid var(--line);color:var(--ink);padding:4px 10px;border-radius:6px;font:inherit;font-size:.85rem;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+h1{font-size:clamp(2rem,8vw,3.6rem);line-height:1.1;font-weight:800;margin:40px 0 14px;max-width:14ch}
+.lead{font-size:1.1rem;color:var(--mute);max-width:46ch;margin:0 0 24px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:800;padding:14px 24px;border-radius:10px;text-decoration:none}
+.btn:focus-visible,.lang button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.mock{margin:36px 0;border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;max-width:460px}
+.bar{display:flex;gap:6px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.bar i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.mock .body{padding:18px}
+.mock b{display:block;font-size:1.2rem}
+.mock p{margin:4px 0 12px;color:var(--mute);font-size:.9rem}
+.mock .wa{display:inline-block;background:#25D366;color:#06210F;font-weight:600;font-size:.85rem;padding:6px 14px;border-radius:20px}
+h2{font-size:1.6rem;margin:56px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--mute);font-size:.95rem}
+ol{padding-inline-start:22px;margin:0}
+ol li{margin:8px 0}
+.cta{margin:56px 0 30px;padding:28px;border-radius:14px;background:var(--ink);color:var(--bg)}
+.cta h2{margin:0 0 8px}
+.cta p{margin:0 0 18px;opacity:.85}
+footer{color:var(--mute);font-size:.85rem;padding:10px 0 30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<span class="logo">Ethan</span>
+<div class="lang" role="group" aria-label="Language">
+<button data-l="en" aria-pressed="true">EN</button>
+<button data-l="fr" aria-pressed="false">FR</button>
+<button data-l="ar" aria-pressed="false">عربي</button>
+</div>
+</header>
+
+<h1 data-i="h1">A website for your business, ready in days.</h1>
+<p class="lead" data-i="lead">I build simple, fast websites with your menu or services, photos, and a WhatsApp button, so customers can reach you in one tap.</p>
+<a class="btn" id="wa1" href="https://wa.me/212649815705" data-i="cta">Message me on WhatsApp</a>
+
+<div class="mock" aria-hidden="true">
+<div class="bar"><i></i><i></i><i></i></div>
+<div class="body"><b>Café Atlas</b><p data-i="mock">Fresh coffee, open every day 8am to 10pm</p><span class="wa">WhatsApp</span></div>
+</div>
+
+<h2 data-i="h2a">What you get</h2>
+<div class="grid">
+<div class="card"><h3 data-i="c1t">Works on every phone</h3><p data-i="c1">Most of your customers browse on mobile. Your site loads fast and looks right on small screens.</p></div>
+<div class="card"><h3 data-i="c2t">Arabic and French</h3><p data-i="c2">Your site can speak to local customers and visitors from abroad in their own language.</p></div>
+<div class="card"><h3 data-i="c3t">Easy to contact you</h3><p data-i="c3">Call, WhatsApp, and map buttons on the first screen, so people can order or book fast.</p></div>
+</div>
+
+<h2 data-i="h2b">How it works</h2>
+<ol>
+<li data-i="s1">You send me your business name, photos, and what you offer.</li>
+<li data-i="s2">I build a free demo and show it to you.</li>
+<li data-i="s3">You tell me what to change. I fix it.</li>
+<li data-i="s4">Your site goes live, and I can keep it updated each month.</li>
+</ol>
+
+<div class="cta">
+<h2 data-i="h2c">Want to see your business online?</h2>
+<p data-i="p3">Send me a message and I will make a free demo for you.</p>
+<a class="btn" id="wa2" href="https://wa.me/212649815705" data-i="cta">Message me on WhatsApp</a>
+</div>
+<footer>© Ethan</footer>
+</div>
+
+<script>
+var T={
+en:{h1:"A website for your business, ready in days.",lead:"I build simple, fast websites with your menu or services, photos, and a WhatsApp button, so customers can reach you in one tap.",cta:"Message me on WhatsApp",mock:"Fresh coffee, open every day 8am to 10pm",h2a:"What you get",c1t:"Works on every phone",c1:"Most of your customers browse on mobile. Your site loads fast and looks right on small screens.",c2t:"Arabic and French",c2:"Your site can speak to local customers and visitors from abroad in their own language.",c3t:"Easy to contact you",c3:"Call, WhatsApp, and map buttons on the first screen, so people can order or book fast.",h2b:"How it works",s1:"You send me your business name, photos, and what you offer.",s2:"I build a free demo and show it to you.",s3:"You tell me what to change. I fix it.",s4:"Your site goes live, and I can keep it updated each month.",h2c:"Want to see your business online?",p3:"Send me a message and I will make a free demo for you."},
+fr:{h1:"Un site web pour votre entreprise, prêt en quelques jours.",lead:"Je crée des sites simples et rapides avec votre menu ou vos services, vos photos et un bouton WhatsApp, pour que vos clients vous joignent en un clic.",cta:"Écrivez-moi sur WhatsApp",mock:"Café frais, ouvert tous les jours de 8h à 22h",h2a:"Ce que vous obtenez",c1t:"Fonctionne sur tous les téléphones",c1:"La plupart de vos clients naviguent sur mobile. Votre site se charge vite et s’affiche bien sur petit écran.",c2t:"Arabe et français",c2:"Votre site parle à vos clients locaux et aux visiteurs de l’étranger dans leur langue.",c3t:"Facile de vous contacter",c3:"Boutons appel, WhatsApp et carte dès le premier écran, pour commander ou réserver vite.",h2b:"Comment ça marche",s1:"Vous m’envoyez le nom de votre entreprise, vos photos et vos offres.",s2:"Je crée une démo gratuite et je vous la montre.",s3:"Vous me dites quoi changer. Je corrige.",s4:"Votre site est mis en ligne, et je peux le mettre à jour chaque mois.",h2c:"Envie de voir votre entreprise en ligne ?",p3:"Envoyez-moi un message et je vous prépare une démo gratuite."},
+ar:{h1:"موقع إلكتروني لمشروعك، جاهز في أيام.",lead:"أصمم مواقع بسيطة وسريعة بقائمة طعامك أو خدماتك وصورك وزر واتساب، ليتواصل معك زبناؤك بضغطة واحدة.",cta:"راسلني على واتساب",mock:"قهوة طازجة، مفتوح كل يوم من 8 صباحا إلى 10 ليلا",h2a:"ماذا ستحصل عليه",c1t:"يعمل على كل الهواتف",c1:"معظم زبنائك يتصفحون من الهاتف. موقعك سريع ويظهر بشكل جيد على الشاشات الصغيرة.",c2t:"العربية والفرنسية",c2:"موقعك يخاطب الزبناء المحليين والزوار من الخارج بلغتهم.",c3t:"سهل التواصل معك",c3:"أزرار الاتصال وواتساب والخريطة في أول شاشة، ليطلب الناس أو يحجزوا بسرعة.",h2b:"كيف يتم العمل",s1:"ترسل لي اسم مشروعك وصورك وما تقدمه.",s2:"أصنع لك نسخة تجريبية مجانية وأعرضها عليك.",s3:"تخبرني بما تريد تغييره وأقوم به.",s4:"ينشر موقعك، ويمكنني تحديثه كل شهر.",h2c:"هل تريد أن ترى مشروعك على الإنترنت؟",p3:"راسلني وسأصنع لك نسخة تجريبية مجانية."}
+};
+function setLang(l){
+document.documentElement.lang=l;
+document.documentElement.dir=l==="ar"?"rtl":"ltr";
+document.querySelectorAll("[data-i]").forEach(function(e){e.textContent=T[l][e.getAttribute("data-i")]});
+document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-l")===l))});
+}
+document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){setLang(b.getAttribute("data-l"))})});
+</script>
+</body>
+</html>
